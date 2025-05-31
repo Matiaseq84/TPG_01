@@ -1,0 +1,397 @@
+/* ============================
+   RESET BÁSICO
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================
+   AJUSTES GENERALES
+============================ */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #2e2e2e;
+  background-color: #faf8f4;
+  line-height: 1.6;
+}
+
+/* ============================
+   ENCABEZADO PRINCIPAL
+============================ */
+header {
+  background-color: #6f4e37; 
+  color: #fffbe6;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* ============================
+   NAV
+============================ */
+.nav-bar {
+  background-color: #6f4e37;
+  border-bottom: 0.125rem solid #d9d3c2;
+  padding: 0.5rem 0;
+}
+
+.nav-bar .container {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  display: block; 
+  max-width: 6.25rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #d2a86d;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #4e3829;
+}
+
+/* ============================
+   CONTENIDO PRINCIPAL
+============================ */
+main .container {
+  padding: 2rem;
+  max-width: 62.5rem;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.05);
+  border-radius: 0.625rem;
+}
+
+.title-wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title-subtitle {
+  color: #7d7d7d;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center; 
+}
+
+.woodmart-title-container {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #388e3c; 
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.liner-continer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.liner-continer .left-line,
+.liner-continer .right-line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+  max-width: 6.25rem;
+}
+
+/* ============================
+   FORMULARIO
+============================ */
+form.wpcf7-form {
+  margin-top: 1rem;
+}
+
+form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+form .col-md-6 {
+  flex: 1 1 45%;
+}
+
+form .col-md-12 {
+  flex: 1 1 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3125rem;
+  margin-top: 0.3rem;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+button[type="submit"] {
+  background-color: #388e3c;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #2e7d32;
+}
+
+.mensaje-container {
+  margin-top: 1.25rem;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mensaje-container textarea {
+  width: 100%;
+  padding: 0.625rem;
+  font-size: 1rem;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+/* ============================
+   TUTORIAL DE MATE
+============================ */
+.tutorial {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fffbe6;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 62.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.05);
+}
+
+.tutorial:nth-child(even) {
+  flex-direction: row-reverse; 
+}
+
+.tutorial-text {
+  flex: 1;
+}
+
+.tutorial-text h2 {
+  font-size: 1.8rem;
+  color: #388e3c;
+  margin-bottom: 1rem;
+}
+
+.tutorial-text p {
+  font-size: 1.1rem;
+  color: #4e3829;
+  margin-bottom: 1rem;
+}
+
+.tutorial-text ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+.tutorial-text ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #2e2e2e;
+}
+
+.tutorial-image {
+  flex: 1;
+  text-align: center;
+}
+
+.tutorial-image img {
+  max-width: 100%;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.tutorial-image img:hover {
+  transform: scale(1.02);
+}
+
+/* ============================
+   LAYOUT GRID
+============================ */
+.row.content-layout-wrapper {
+  display: flex;
+  gap: 2rem; 
+  flex-wrap: wrap; 
+  align-items: flex-start; 
+}
+
+.content-layout-wrapper {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.metodo {
+  flex: 0 0 18.75rem;
+  max-width: 28.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ============================
+   FOOTER
+============================ */
+.footer {
+  background-color: #6f4e37;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.footer-logo img {
+  max-width: 6.25rem;
+}
+
+.footer-column h4 {
+  color: #d2a86d;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.suscripcion {
+  display: block;
+}
+
+.suscripcion input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.suscripcion button {
+  background-color: #d2a86d;
+  border: none;
+  padding: 0.6rem;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.suscripcion button:hover {
+  opacity: 0.9;
+}
+
+.suscripcion-col {
+  text-align: center;
+}
+
+.conectate {
+  margin-top: 1rem;
+  color: #d2a86d;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.redes a {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.footer-copy {
+  border-top: 1px solid #333;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  color: #ccc;
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
