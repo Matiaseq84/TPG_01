@@ -55,7 +55,7 @@ body {
 }
 
 .hero-image {
-    background-image: url("img/wallpaperflare.com_wallpaper\ \(3\).jpg");
+    background-image: url("../img/wallpaperflare.com_wallpaper\ \(3\).jpg");
     min-height: 94vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,7 +199,7 @@ body {
 /*******LOCALES*******/
 .locales { 
   margin-top: 1rem;
-  background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url("img/locales.webp");   
+  background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url("../img/locales.webp");   
   min-height: 80vh;
   background-size: cover;
   background-position: center;
