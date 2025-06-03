@@ -666,9 +666,7 @@ button[type="submit"]:hover {
   }
 }
 
-/* ============================
-   FOOTER
-   ============================ */
+/* FOOTER RESPONSIVE */
 
 @media (max-width: 1024px) {
   .footer-container {
