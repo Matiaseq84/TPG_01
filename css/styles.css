@@ -517,6 +517,19 @@ button[type="submit"]:hover {
 }
 
 /* ============================
+   EFECTO YERBAS TARJETAS ZOOM
+   ============================*/
+
+.yerba-card .producto-img-container img {
+  transition: transform 0.3s ease;
+}
+
+.yerba-card:hover .producto-img-container img {
+  transform: scale(1.1);
+}
+
+
+/* ============================
    SECCION YERBAS
    ============================ */
 
