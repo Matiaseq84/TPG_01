@@ -667,7 +667,6 @@ button[type="submit"]:hover {
 }
 
 /* FOOTER RESPONSIVE */
-
 @media (max-width: 1024px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
@@ -697,3 +696,9 @@ button[type="submit"]:hover {
     text-align: center;
   }
 }
+/*   FIN FOOTER RESPONSIVE  */
+/* ============================
+   FIN MEDIA QUERIES
+============================ */
+
+

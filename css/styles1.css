@@ -1,7 +1,7 @@
 /*///////////////////// GOOGLE FONT ///////////////////////*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/*///////////////////// AJUSTES GENERALES - DE TU CSS ORIGINAL ///////////////////////*/
+/*///////////////////// AJUSTES GENERALES - CSS ORIGINAL ///////////////////////*/
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +9,9 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif; /* Tu fuente principal */
-  background-color: #fefefe; /* Tu color de fondo */
-  color: #333; /* Tu color de texto */
+  font-family: 'Roboto', sans-serif; /* fuente principal */
+  background-color: #fefefe; /* color de fondo */
+  color: #333; /* color de texto */
   line-height: 1.6;
 }
 
@@ -59,10 +59,10 @@ body {
 
 
 /* =========================================================
-    INICIO DEL CÓDIGO DE TU COMPAÑERA - HEADER (NAV BAR)
+    INICIO DEL HEADER (NAV BAR)
 ========================================================= */
 .nav-bar {
-    background-color: #6f4e37; /* Color de fondo de la barra de navegación de tu compañera */
+    background-color: #6f4e37; /* Color de fondo de la barra de navegación  */
     border-bottom: 0.125rem solid #d9d3c2;
     padding: 0.5rem 0;
 }
@@ -78,7 +78,7 @@ body {
    Si tu HTML usa <div class="logo"> dentro de .nav-bar .container, este es correcto. */
 .logo {
     display: block;  
-    max-width: 6.25rem; /* Tamaño del logo de tu compañera */
+    max-width: 6.25rem; /* Tamaño del logo  */
     margin-right: 2rem; /* Espacio entre el logo y el menú */
 }
 
@@ -98,20 +98,20 @@ body {
 
 .menu li a {
     text-decoration: none;
-    color: #d2a86d; /* Color de los enlaces del menú de tu compañera */
+    color: #d2a86d; /* Color de los enlaces del menú */
     font-weight: 600;
     transition: color 0.3s;
 }
 
 .menu li a:hover {
-    color: #4e3829; /* Color de los enlaces del menú al pasar el ratón de tu compañera */
+    color: #4e3829; /* Color de los enlaces del menú al pasar el ratón  */
 }
 /* =========================================================
-    FIN DEL CÓDIGO DE TU COMPAÑERA - HEADER (NAV BAR)
+    FIN DEL HEADER (NAV BAR)
 ========================================================= */
 
 
-/*////////////////////// HERO - DE TU CSS ORIGINAL ///////////////////////*/
+/*////////////////////// HERO - CSS ORIGINAL ///////////////////////*/
 .hero-tienda,
 .hero-franquicias {
   height: 300px;
@@ -132,7 +132,7 @@ body {
   text-align: center;
 }
 
-/*////////////////////// PRODUCTOS - DE TU CSS ORIGINAL ///////////////////////*/
+/*////////////////////// PRODUCTOS - CSS ORIGINAL ///////////////////////*/
 .product-grid {
   display: flex;
   flex-wrap: wrap;
@@ -188,7 +188,7 @@ body {
   background-color: #b5863a;
 }
 
-/*////////////////////// INFORMACIÓN DE FRANQUICIAS - DE TU CSS ORIGINAL ///////////////////////*/
+/*////////////////////// INFORMACIÓN DE FRANQUICIAS - CSS ORIGINAL ///////////////////////*/
 .info-grid {
     display: flex;
     flex-wrap: wrap;
@@ -221,7 +221,7 @@ body {
     margin-bottom: 0;
 }
 
-/*////////////////////// FORMULARIO FRANQUICIAS - DE TU CSS ORIGINAL ///////////////////////*/
+/*////////////////////// FORMULARIO FRANQUICIAS - CSS ORIGINAL ///////////////////////*/
 .contact-form-section {
     padding: 40px 0;
     background-color: #f9f9f9;
@@ -247,13 +247,13 @@ body {
 }
 
 
-/* =========================================================
-    INICIO DEL CÓDIGO DE TU COMPAÑERA - FOOTER
-========================================================= */
+/* ======================
+    INICIO DEL FOOTER
+====================== */
 .footer {
     background-color: #6f4e37;
     color: white;
-    font-family: 'Raleway', sans-serif; /* Tu compañera usa Raleway aquí */
+    font-family: 'Raleway', sans-serif; 
     padding-top: 3rem;
     font-size: 0.9rem;
 }
@@ -354,8 +354,35 @@ body {
     margin: 0 auto;
     text-align: left;
 }
-/* =========================================================
-    FIN DEL CÓDIGO DE TU COMPAÑERA - FOOTER
-========================================================= */
+/* ================
+    FIN  FOOTER
+================ */
 
+/* ==================
+    MEDIA QUERIES
+================== */
+/* FOOTER RESPONSIVE */
 
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 2rem;
+  }
+
+  .suscripcion {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .redes a {
+    margin: 0 0.5rem;
+  }
+
+  .footer-copy {
+    text-align: center;
+  }
+}

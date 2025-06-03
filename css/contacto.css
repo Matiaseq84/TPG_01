@@ -402,12 +402,12 @@ form .btn {
     max-width: 6.25rem;
   }
 
-  /* FOOTER RESPONSIVE */
+  /* FOOTER RESPONSIVE 
 
 @media (max-width: 1024px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
-  }
+  }*/
 }
 
 /* FOOTER RESPONSIVE */
@@ -437,4 +437,3 @@ form .btn {
 }
 
   
-}
