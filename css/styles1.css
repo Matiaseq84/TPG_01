@@ -15,14 +15,14 @@ body {
   line-height: 1.6;
 }
 
-/* Container reutilizable - DE TU CSS ORIGINAL */
+/* Container reutilizable - CSS ORIGINAL */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 
-/*////////////////////// HEADER - DE TU CSS ORIGINAL ///////////////////////*/
+/*////////////////////// HEADER - CSS ORIGINAL ///////////////////////*/
 /* NOTA: Tu HTML ahora usará <header class="nav-bar"> en lugar de <header class="main-header">
    para el header principal, y tu <h1>/banner principal irán en un <header> o <section> aparte si los tienes.
    Este bloque de tu original CSS de header se elimina, ya que el nav-bar de tu compañera lo reemplaza. */
