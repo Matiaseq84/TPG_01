@@ -22,6 +22,11 @@ body {
   margin: auto;
 }
 
+.none {
+  display: none;
+}
+
+
 /*////////////////////// HEADER - CSS ORIGINAL ///////////////////////*/
 /* NOTA: Tu HTML ahora usará <header class="nav-bar"> en lugar de <header class="main-header">
    para el header principal, y tu <h1>/banner principal irán en un <header> o <section> aparte si los tienes.
@@ -61,51 +66,74 @@ body {
 /* =========================================================
     INICIO DEL HEADER (NAV BAR)
 ========================================================= */
-.nav-bar {
-    background-color: #6f4e37; /* Color de fondo de la barra de navegación  */
-    border-bottom: 0.125rem solid #d9d3c2;
-    padding: 0.5rem 0;
+header {
+  position: fixed;
+  left:0;
+  top: 0;
+  z-index: 999;
+  padding: 1rem;
+  width: 100%;
+  height: 6rem;
+  background-color: #6f4e37;
 }
 
-.nav-bar .container {
-    display: flex;
-    justify-content: flex-start; /* Alinea los ítems a la izquierda */
-    align-items: center;
-    padding: 0 2rem; /* Espaciado dentro del contenedor de la nav-bar */
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* OJO: Si tu logo usa solo .logo img (sin .nav-bar .logo), este estilo podría ser más específico.
-   Si tu HTML usa <div class="logo"> dentro de .nav-bar .container, este es correcto. */
-.logo {
-    display: block;  
-    max-width: 6.25rem; /* Tamaño del logo  */
-    margin-right: 2rem; /* Espacio entre el logo y el menú */
+.logo img {
+  display: block; 
+  max-width: 4.5rem;
+  max-height: 4.5rem;
+  
 }
 
-/* Para el contenedor del menú, ajustamos para que esté a la derecha */
-.nav-bar nav {
-    flex-grow: 1; /* Permite que el nav ocupe el espacio restante */
+.menu-btn {
+  background-color: #d2a86d;
+  outline: thin solid #6f4e37;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-btn svg {
+  fill: #6f4e37;
 }
 
 .menu {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    justify-content: flex-end; /* Alinea los ítems del menú a la derecha */
-    margin: 0; /* Eliminar margen predeterminado de la lista */
-    padding: 0; /* Eliminar padding predeterminado de la lista */
+  position: fixed;
+  left: 1rem;
+  top: 6rem;
+  width: 50%;
+  height: 100vh;
+  background-color: #d2a86d;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
 }
 
-.menu li a {
-    text-decoration: none;
-    color: #d2a86d; /* Color de los enlaces del menú */
-    font-weight: 600;
-    transition: color 0.3s;
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.menu li a:hover {
-    color: #4e3829; /* Color de los enlaces del menú al pasar el ratón  */
+.menu a {
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border-bottom: thin solid #6f4e37;
+  color: #6f4e37;
+  font-weight: bold;
+  
 }
+
+.menu a:hover {
+  color: #4e3829;
+}
+
 /* =========================================================
     FIN DEL HEADER (NAV BAR)
 ========================================================= */
@@ -386,4 +414,50 @@ body {
   .footer-copy {
     text-align: center;
   }
+}
+
+@media screen and (min-width: 768px) {
+    
+    header {
+      position: sticky;
+      top: 0;
+      padding: 0.5rem;
+      height: calc(var(6rem) - 0.5rem);
+    }
+
+}
+
+/* MENU */
+@media screen and (min-width: 1024px) {
+
+  .menu-btn {
+    display: none;
+  }
+
+  .div {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+    background-color: #6f4e37;
+    color: black;
+    align-self: flex-end;
+  }
+
+  .menu a {
+    color: #d2a86d;
+    align-items: start;
+    font-size: 1rem;
+  }
+
+  .logo img {
+    max-width: 6.25rem;
+  }
+
 }

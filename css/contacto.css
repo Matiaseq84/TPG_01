@@ -342,8 +342,6 @@ form .btn {
    MEDIA QUERIES
 ============================ */
 
-/* CONTACTO */
-
 @media screen and (min-width: 768px) {
     .contacto > .container {
         display: flex;

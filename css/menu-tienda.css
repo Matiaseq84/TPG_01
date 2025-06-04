@@ -40,6 +40,10 @@ body {
   transform: scale(1.1);
 }
 
+.none {
+  display: none;
+}
+
 /******HEADER*******/
 
 .header-black-out {
@@ -67,6 +71,8 @@ body {
   text-align: center;
   padding: 1rem 1rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero-image-header h1 {
@@ -79,9 +85,11 @@ body {
   font-weight: 300;
 }
 
-.logo img{
-    width: 150px;
-    height: 150px;
+.logo-link img {
+ 
+  width: 150px;
+  height: 150px;
+  
 }
 
 .hero-image-info {
@@ -113,7 +121,7 @@ body {
 /* ============================
    NAV
 ============================ */
-.nav-bar {
+/*.nav-bar {
     padding: 0.5rem 0;
 }
 
@@ -131,16 +139,61 @@ body {
   justify-content: center;
 }
 
-.menu-nav li a {
+.menu-nav a {
   text-decoration: none;
   color: white;
   font-weight: 600;
   transition: color 0.3s;
 }
 
-.menu-nav li a:hover {
+.menu-nav a:hover {
+  color: #4e3829;
+}*/
+.menu-btn {
+  background-color: #d2a86d;
+  outline: thin solid #6f4e37;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-btn svg {
+  fill: #6f4e37;
+}
+
+.menu {
+  position: fixed;
+  left: 1rem;
+  top: 6rem;
+  width: 50%;
+  height: 60vh;
+  background-color: #d2a86d;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+  
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border-bottom: thin solid #6f4e37;
+  color: #6f4e37;
+  font-weight: bold;
+  
+}
+
+.menu a:hover {
   color: #4e3829;
 }
+
 
 /******MENU-FOTOS***********/
 .menu-foto-principal {
@@ -163,19 +216,19 @@ body {
 
 .menu-fotos-salado .foto-info {
   top: 2rem;
-  left: 12rem; 
+  left: 6rem; 
 }
 
 .foto-info span {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   background-color: white;
   font-weight: bold;
   padding: 0.4rem 0.7rem;
 }
 
 .foto-info h4 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: white;
   font-weight: 600;
   font-family: 'Oswald', sans-serif;
@@ -377,8 +430,47 @@ body {
     max-width: 600px;
   }
 
+  .menu-fotos-dulce .foto-info {
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .menu-fotos-salado .foto-info {
+    top: 1rem;
+    left: 6rem; 
+    text-align: right;
+  }
+
+  .foto-info span {
+    font-size: 0.8rem;
+  }
+
+  .foto-info h4 {
+    font-size: 2rem;
+  }
   
 
+}
+
+@media screen and (min-width: 768px) {
+  .menu-fotos-dulce .foto-info {
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .menu-fotos-salado .foto-info {
+    top: 2rem;
+    left: 13rem; 
+    text-align: right;
+  }
+
+  .foto-info span {
+    font-size: 1rem;
+  }
+
+  .foto-info h4 {
+    font-size: 2.4rem;
+  }
 }
 
 /* FOOTER RESPONSIVE */
@@ -413,4 +505,46 @@ body {
   .footer-copy {
     text-align: center;
   }
+}
+
+/** HEADER RESPONSIVE**/
+@media screen and (min-width: 768px) {
+    
+
+}
+
+/* MENU */
+@media screen and (min-width: 1024px) {
+
+  .menu-btn {
+    display: none;
+  }
+
+  .div {
+    display: none;
+  }
+
+  .menu{
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+    background-color: transparent;
+    align-self: center;
+  }
+
+  .menu a {
+    color: white;
+    align-items: start;
+    font-size: 1rem;
+    border: none;
+    
+  }
+
+  .logo img {
+    max-width: 6.25rem;
+  }
+
 }
