@@ -28,40 +28,6 @@ body {
 
 
 /*////////////////////// HEADER - CSS ORIGINAL ///////////////////////*/
-/* NOTA: Tu HTML ahora usará <header class="nav-bar"> en lugar de <header class="main-header">
-   para el header principal, y tu <h1>/banner principal irán en un <header> o <section> aparte si los tienes.
-   Este bloque de tu original CSS de header se elimina, ya que el nav-bar de tu compañera lo reemplaza. */
-/*
-.main-header {
-  background-color: #fff8f0;
-  padding: 20px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.logo img {
-  height: 50px;
-}
-.main-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-.main-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-.main-nav a:hover {
-  color: #d8a74c;
-}
-*/
-
 
 /* =========================================================
     INICIO DEL HEADER (NAV BAR)
@@ -147,10 +113,7 @@ header > .container {
   background-position: center;
   display: flex;
   align-items: center;
-  /* ¡IMPORTANTE! Las rutas de las imágenes de fondo para cada hero DEBEN ir en tu HTML
-     en el atributo 'style' de la sección. Ejemplo:
-     <section class="hero-tienda" style="background-image: url('img/tienda/banner-tienda.jpg');">
-  */
+  
 }
 .hero-content {
   background-color: rgba(255,255,255,0.8);
@@ -268,7 +231,7 @@ header > .container {
     padding: 10px;
     border: 1px solid #aaa;
     border-radius: 5px;
-    box-sizing: border-box; /* Asegura que padding no aumente el width */
+    box-sizing: border-box; 
 }
 .contact-form-section p {
     margin-bottom: 25px;
